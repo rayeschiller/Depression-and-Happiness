@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Final Project</title>
+<link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="styles.css">
+<script type="text/javascript" src="http://cdn.tonejs.org/r6/Tone.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+
+<canvas id="canvas" style="position:absolute; left:0px; top:0px" height="0px" width="0px"></canvas>
+
+<script type="text/javascript" src="script.js"> </script>
+<script type="text/javascript" src="bubbles.js"> </script>
+
+</head>
+
+<body>
+
+<div id="boxes">
+  <div id="dialog" class="window">
+    Move the mouse left to right to change the background color, sound tone, and words in the bubbles. <br>
+    Move the mouse up and down to change the size of the words. <br>
+    Drag the slider and click start to change the number of bubbles on screen. 
+    <div id="popupfoot"> <a href="#" class="close agree">Okay</a> </div>
+  </div>
+  <div id="mask"></div>
+</div>
+
+<div class="centered">
+ 
+<button class="button" id="starting"onClick="main()"> START </button>
+<!-- <button class="button" id="words" onClick="wordle()">WORDS  --></div>
+<br>
+<div class="centered2">
+<label>Number of Bubbles</label>
+ <input type="range" onChange="v1(this)" min="1" max="100"/>
+<br>
+<!-- <label>Speed of Bubbles</label>
+ <input type="range" onChange="speedy(this)" min="0" max="300"/> -->
+</div>
+</body>
+</html>
